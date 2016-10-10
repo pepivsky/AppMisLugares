@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="mx.pepivsky.mislugares.MainActivity"
+    android:weightSum="1">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingLeft="16dp"
+       android:paddingRight="16dp"
+
+       >
+   <android.support.v7.widget.CardView
+       android:layout_width="130dp"
+       android:layout_height="140dp"
+       card_view:cardCornerRadius="4dp"
+       android:layout_margin="10dp"
+       android:paddingRight="30dp"
+
+       >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/imgCampo"
+          android:layout_width="130dp"
+          android:layout_height="120dp"
+          android:src="@drawable/campo"
+          android:scaleType="centerCrop"
+          android:onClick="irMapaC"
+
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Campo de fútbol"
+          />
+      </LinearLayout>
+
+   </android.support.v7.widget.CardView>
+
+
+
+
+      <android.support.v7.widget.CardView
+          android:layout_width="130dp"
+          android:layout_height="140dp"
+          card_view:cardCornerRadius="4dp"
+          android:layout_margin="10dp"
+          >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+            <ImageView
+             android:id="@+id/imgIglesia"
+             android:layout_width="130dp"
+             android:layout_height="120dp"
+             android:src="@drawable/iglesia"
+             android:scaleType="centerCrop"
+             android:onClick="irMapaI"
+
+             />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iglesia"
+                />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+   </LinearLayout>
+
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingLeft="16dp"
+       android:paddingRight="16dp"
+
+       >
+      <android.support.v7.widget.CardView
+          android:layout_width="130dp"
+          android:layout_height="140dp"
+          card_view:cardCornerRadius="4dp"
+          android:layout_margin="10dp"
+          android:paddingRight="30dp"
+          >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+         <ImageView
+             android:id="@+id/imgEscuela"
+             android:layout_width="130dp"
+             android:layout_height="120dp"
+             android:src="@drawable/escuela"
+             android:scaleType="centerCrop"
+             android:onClick="irMapaE"
+
+             />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escuela"
+                />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+
+
+
+      <android.support.v7.widget.CardView
+          android:layout_width="130dp"
+          android:layout_height="140dp"
+          card_view:cardCornerRadius="4dp"
+          android:layout_margin="10dp"
+          >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+         <ImageView
+             android:id="@+id/imgPlaza"
+             android:layout_width="130dp"
+             android:layout_height="120dp"
+             android:src="@drawable/plazacivica"
+             android:scaleType="centerCrop"
+             android:onClick="irMapaI"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Iglesia"
+             />
+         </LinearLayout>
+      </android.support.v7.widget.CardView>
+</LinearLayout>
+
+   <android.support.design.widget.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:id="@+id/floatingActionButton"
+       android:src="@drawable/places_ic_search"
+       android:layout_weight="0.45"
+       android:layout_gravity="end"
+       android:layout_marginRight="15dp"
+       android:layout_marginTop="90dp"
+       android:tint="@color/common_google_signin_btn_text_dark_default" />
+
+</LinearLayout>
